@@ -9,29 +9,29 @@ function HomePage() {
             {/* Content */}
             <div id="content" className="flex w-screen h-screen justify-center items-center">
                 {/* Container */}
-                <div id="main" className="flex w-5/6 h-screen justify-center items-center">
+                <div id="main" className="flex flex-col justify-between">
                     {/* Top Bar */}
                     <div id="topbar" className="flex justify-between items-center">
                         {/* Top Bar - Left Part */}
-                        <div id="sentence" class="animate__animated animate__fadeIn">
+                        <div id="sentence" className="animate__animated animate__fadeIn">
                             <h2
                                 id="sign"
-                                class="transition duration-200 text-white text-opacity-40 subpixel-antialiased font-bold text-xl hover:text-opacity-95 select-none">
+                                className="transition duration-200 text-white text-opacity-40 subpixel-antialiased font-bold text-xl hover:text-opacity-95 select-none">
                                 下雨的伞
                             </h2>
                         </div>
 
                         <div
                             id="intro"
-                            class="w-56 h-12 bg-opacity-10 bg-white rounded-lg hidden sm:flex sm:justify-evenly animate__animated animate__fadeIn backdrop-filter backdrop-blur-xl">
+                            className="w-56 h-12 bg-opacity-10 bg-white rounded-lg hidden sm:flex sm:justify-evenly animate__animated animate__fadeIn backdrop-filter backdrop-blur-xl">
                             <div
                                 id="expend-button"
-                                class="w-14 h-full flex justify-center items-center"
+                                className="w-14 h-full flex justify-center items-center"
                                 onclick="zenMode()">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     id="menu-1"
-                                    class="transition duration-200 h-6 w-6 stroke-current text-white text-opacity-60 hover:text-opacity-95">
+                                    className="transition duration-200 h-6 w-6 stroke-current text-white text-opacity-60 hover:text-opacity-95">
                                     <path
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
@@ -43,29 +43,44 @@ function HomePage() {
 
                             <div
                                 id="website-log"
-                                class="transition duration-200 w-20 h-full flex justify-center items-center rounded-lg ease-in-out"
+                                className="transition duration-200 w-20 h-full flex justify-center items-center rounded-lg ease-in-out"
                                 onmouseover="buttonOver(this)"
                                 onmouseout="buttonOut(this)"
                                 onclick="openSitelog()">
                                 <h2
                                     id="menu-2"
-                                    class="text-white text-opacity-60 subpixel-antialiased font-semibold text-md select-none">
-                                    网站日志
+                                    className="text-white text-opacity-60 subpixel-antialiased font-semibold text-md select-none">
+                                    实验室
                                 </h2>
                             </div>
 
                             <div
                                 id="about"
-                                class="transition duration-200 w-16 h-full flex justify-center items-center rounded-lg ease-in-out"
+                                className="transition duration-200 w-16 h-full flex justify-center items-center rounded-lg ease-in-out"
                                 onmouseover="buttonOver(this)"
                                 onmouseout="buttonOut(this)"
                                 onclick="changeToAbout()">
                                 <h2
                                     id="menu-3"
-                                    class="text-white text-opacity-60 subpixel-antialiased font-semibold text-md select-none hover:text-opacity-95">
-                                    关于
+                                    className="text-white text-opacity-60 subpixel-antialiased font-semibold text-md select-none hover:text-opacity-95">
+                                    记录
                                 </h2>
                             </div>
+                        </div>
+                    </div>
+
+                    <div
+                        id="main-title"
+                        className="flex justify-center animate__animated animate__zoomIn transition duration-200">
+                        <div className="flex flex-col justify-center items-center" onclick="exitzenMode()">
+                            <h2
+                                id="title"
+                                className="text-8xl text-gray-100 select-none sm:text-9xl subpixel-antialiased">
+                                Seen
+                            </h2>
+                            <p className="text-white text-opacity-30 font-semibold text-lg select-none subpixel-antialiased">
+                                本站建设中...差不多了
+                            </p>
                         </div>
                     </div>
                 </div>
