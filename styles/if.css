@@ -1,9 +1,14 @@
 /* Custom */
 
+::-webkit-scrollbar {
+    display: none; /* Chrome Safari Hide Scrollbar */
+  }
+
+
 /* Custom - Container */
 #main {
-    height: 94%;
     width: 94%;
+    scrollbar-width: none; /* Firefox Hide Scrollbar */
 }
 
 /* Custom - Title */
