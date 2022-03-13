@@ -27,6 +27,8 @@ function SubpageProfile() {
                             className="rounded-full"
                             src="https://seen-1302639736.file.myqcloud.com/site-data/homepage/avatar01.webp"
                             alt="Profile Avatar"
+                            width={500}
+                            height={500}
                         />
                     </div>
                 </div>
