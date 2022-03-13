@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 function SubpageProfile() {
     return (
         <div
@@ -21,9 +23,10 @@ function SubpageProfile() {
                         </p>
                     </div>
                     <div className="w-56 h-56 mr-4">
-                        <img
+                        <Image
                             className="rounded-full"
                             src="https://seen-1302639736.file.myqcloud.com/site-data/homepage/avatar01.webp"
+                            alt="Profile Avatar"
                         />
                     </div>
                 </div>
