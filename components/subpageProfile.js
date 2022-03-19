@@ -1,10 +1,11 @@
-import Image from 'next/image'
+import Image from "next/image";
+import Skills from "./skills";
 
 function SubpageProfile() {
     return (
         <div
             id="subpage"
-            className="bg-zinc-800 bg-opacity-40 backdrop-blur-lg rounded-xl flex w-5/6 justify-center items-center">
+            className="bg-zinc-800 bg-opacity-40 backdrop-blur-lg rounded-xl flex w-5/6 justify-center items-center mb-8">
             <div id="pt-container" className="pt-8 pl-8 pr-8 pb-10">
                 <div>
                     <h2 className="text-slate-50 text-3xl font-bold subpixel-antialiased">关于</h2>
@@ -32,10 +33,12 @@ function SubpageProfile() {
                         />
                     </div>
                 </div>
-                <div className="flex mt-8">
+                <div className="flex mt-10 flex-col">
                     <div>
                         <h3 className="text-slate-50 text-2xl font-bold subpixel-antialiased">技能点</h3>
                     </div>
+
+                    <Skills />
                 </div>
             </div>
         </div>

@@ -14,6 +14,7 @@ function HomePage() {
                 <HomepageLayout />
 
                 <SubpageProfile />
+
             </div>
         </div>
     );
