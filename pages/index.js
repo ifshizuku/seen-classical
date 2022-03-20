@@ -2,6 +2,7 @@ import HomepageLayout from "../components/homepageLayout";
 import SubpageProfile from "../components/subpageProfile";
 import React from "react";
 import GlobalContext from "../components/globalContext";
+import Sidebar from "../components/sideBar";
 
 class HomePage extends React.Component {
     static contextType = GlobalContext;
@@ -15,10 +16,21 @@ class HomePage extends React.Component {
             // console.log(this.state.zenmode);
         };
 
+        this.toggleSidebar = () => {
+            this.setState((state) => ({
+                sidebar: state.sidebar === true ? false : true,
+            }));
+            // console.log(this.state.sidebar);
+        };
+
         this.state = {
             zenmode: false,
             toggleZen: this.toggleZen,
+            sidebar: false,
+            toggleSidebar: this.toggleSidebar,
         };
+
+        
     }
     render() {
         return (
@@ -34,6 +46,7 @@ class HomePage extends React.Component {
 
                             <SubpageProfile />
                         </div>
+                        <Sidebar />
                     </div>
                 </div>
             </GlobalContext.Provider>
