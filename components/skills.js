@@ -74,7 +74,7 @@ class Skills extends React.Component {
                         <div
                             className={[
                                 "w-full rounded bg-white bg-opacity-20 mt-0.5 flex transition-all",
-                                this.state.[item.hoverController] ? ["visible opacity-100 h-2"] : ["invisible opacity-0 h-0"],
+                                this.state.[item.hoverController] ? ["visible opacity-100 h-2"] : ["invisible opacity-0 h-0"]
                             ].join(" ")}>
                             <div className={["h-full bg-white bg-opacity-80 rounded transition", item.process].join(" ")}></div>
                         </div>
