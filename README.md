@@ -8,8 +8,8 @@
 
 ## 技术栈
 
-这个站点是一个导航站，仅此而已。并没有使用现成的博客框架之类，技术与框架是[Next.js](https://nextjs.org/)和[Tailwind CSS](https://tailwindcss.com/)，未来可能还会用到 Animate CSS，不过大体也就这些。
+这个站点是一个导航站，仅此而已。并没有使用现成的博客框架之类，技术与框架是 [Next.js](https://nextjs.org/) 和 [Tailwind CSS](https://tailwindcss.com/)，~~未来可能还会用到 Animate CSS~~，不过大体也就这些。**[React.js](https://reactjs.org) 已使用**
 
 ## 状态
 
-这个页面的所有内容都是开源的，完成到一定程度之后会作为一个 Template 发布，不过未来很长一段时间也应该只是一直迭代。
+这个页面的所有内容都是开源的，完成到一定程度之后可能会作为一个 Template 发布，不过未来很长一段时间也应该只是一直迭代。
