@@ -1,5 +1,7 @@
 import React from "react";
 import GlobalContext from "./globalContext";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 class HomepageLayout extends React.Component {
     static contextTypes = GlobalContext;
@@ -16,7 +18,7 @@ class HomepageLayout extends React.Component {
     render() {
         return (
             <GlobalContext.Consumer>
-                {({toggleZen, zenmode}) => {
+                {({ toggleZen, zenmode, toggleSidebar }) => {
                     return (
                         <div id="main" className="flex flex-col justify-between overflow-scroll h-screen">
                             {/* Top Bar */}
@@ -107,6 +109,10 @@ class HomepageLayout extends React.Component {
                                             记录
                                         </h2>
                                     </div>
+                                </div>
+                                <div id="menu-mobile" className="flex sm:hidden bg-white bg-opacity-20 mr-2 lg:mr-0 rounded-md"
+                                onClick={toggleSidebar}>
+                                    <FontAwesomeIcon icon={solid("bars")} className="text-white text-opacity-60 m-2 text-lg "/>
                                 </div>
                             </div>
 
