@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import skillList from "./skills-data";
+import React from "react";
 
 // Import Specific Icons
 import { faJsSquare, faReact, faSwift, faSketch } from "@fortawesome/free-brands-svg-icons"
