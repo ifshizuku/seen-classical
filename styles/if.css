@@ -10,6 +10,10 @@
     scrollbar-width: none; /* Firefox Hide Scrollbar */
 }
 
+html {
+    background-color: #18181b;
+}
+
 /* Custom - Title */
 #title {
     font-family: Bad Script;
