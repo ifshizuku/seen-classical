@@ -58,7 +58,7 @@ class Skills extends React.Component {
                             [item.hoverController]: false,
                         });
                     }}>
-                    <div className="flex justify-center items-center mt-3.5 mb-3.5 ml-5">
+                    <div className="flex justify-center items-center lg:mt-3.5 lg:mb-3.5 mt-2 mb-2 lg:ml-5 ml-4">
                         <FontAwesomeIcon
                             size="2x"
                             icon={myIcons[fc]}
@@ -67,7 +67,7 @@ class Skills extends React.Component {
                             id={["icon_" + item.key]}
                         />
                     </div>
-                    <div className="flex flex-col justify-center items-center ml-3 mr-5 ">
+                    <div className="flex flex-col justify-center items-center lg:ml-3 lg:mr-5 ml-2 mr-4">
                         <span className="font-medium text-lg text-white transition select-none subpixel-antialiased">
                             {item.fullname}
                         </span>
@@ -85,7 +85,7 @@ class Skills extends React.Component {
 
         return (
             <div id="skills-container" className="flex pt-6">
-                <div id="skills-cards" className="flex flex-wrap gap-6">
+                <div id="skills-cards" className="flex flex-wrap lg:gap-6 gap-4">
                     {items}
                 </div>
             </div>

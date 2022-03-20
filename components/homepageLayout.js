@@ -7,7 +7,7 @@ function HomepageLayout() {
                 <div id="sentence" className="animate__animated animate__fadeIn">
                     <h2
                         id="sign"
-                        className="transition duration-200 text-white text-opacity-40 subpixel-antialiased font-bold text-xl hover:text-opacity-95 select-none">
+                        className="transition duration-200 text-white text-opacity-40 subpixel-antialiased font-bold text-xl hover:text-opacity-95 select-none lg:pl-0 pl-2">
                         下雨的伞
                     </h2>
                 </div>
