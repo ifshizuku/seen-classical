@@ -59,7 +59,7 @@ function HomepageLayout() {
                         Seen
                     </h2>
                     <p className="text-white text-opacity-30 font-semibold text-lg select-none subpixel-antialiased">
-                        本站建设中...差不多了
+                        本站建设中...差多了
                     </p>
                 </div>
             </div>

@@ -2,8 +2,7 @@
 
 ::-webkit-scrollbar {
     display: none; /* Chrome Safari Hide Scrollbar */
-  }
-
+}
 
 /* Custom - Container */
 #main {
@@ -13,5 +12,14 @@
 
 /* Custom - Title */
 #title {
-    font-family: Bad Script
+    font-family: Bad Script;
+}
+
+#icon_design,
+#icon_video,
+#icon_writing,
+#icon_photography,
+#icon_paint,
+#icon_guitar {
+    font-size: 1.6rem;
 }

@@ -1,5 +1,6 @@
 import HomepageLayout from "../components/homepageLayout";
 import SubpageProfile from "../components/subpageProfile";
+import React from "react";
 
 function HomePage() {
     return (
@@ -14,6 +15,7 @@ function HomePage() {
                 <HomepageLayout />
 
                 <SubpageProfile />
+
             </div>
         </div>
     );
