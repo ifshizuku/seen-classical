@@ -45,12 +45,12 @@ class HomepageLayout extends React.Component {
                                 <div
                                     id="intro"
                                     className={[
-                                        "w-56 h-12 bg-opacity-10 bg-white rounded-lg hidden sm:flex sm:justify-evenly backdrop-filter backdrop-blur-xl transition duration-500",
+                                        "pl-2 pr-4 h-12 bg-opacity-10 bg-white rounded-lg hidden sm:flex sm:justify-evenly backdrop-filter backdrop-blur-xl transition duration-500",
                                         zenmode ? "opacity-0" : "opacity-100",
                                     ].join(" ")}>
                                     <div
                                         id="expend-button"
-                                        className="w-14 h-full flex justify-center items-center"
+                                        className="pl-4 pr-4 h-full flex justify-center items-center"
                                         onClick={toggleZen}>
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +67,7 @@ class HomepageLayout extends React.Component {
 
                                     <div
                                         id="lab"
-                                        className="transition duration-200 h-full flex justify-center items-center rounded-lg ease-in-out hover:scale-105 hover:bg-slate-100"
+                                        className="transition duration-200 pl-3 pr-3  h-full flex justify-center items-center rounded-lg ease-in-out hover:scale-105 hover:bg-slate-100"
                                         onMouseEnter={() => {
                                             this.setState({
                                                 labhover: true,
@@ -92,7 +92,7 @@ class HomepageLayout extends React.Component {
 
                                     <div
                                         id="record"
-                                        className="transition duration-200 h-full flex justify-center items-center rounded-lg ease-in-out hover:scale-105 hover:bg-slate-100"
+                                        className="transition duration-200 pl-3 pr-3 ml-2 h-full flex justify-center items-center rounded-lg ease-in-out hover:scale-105 hover:bg-slate-100"
                                         onMouseEnter={() => {
                                             this.setState({
                                                 recordhover: true,
