@@ -5,8 +5,8 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: data/home-data and.js
-  label: HomepageData
+  path: data/skills-data.js
+  label: SkillsCard
   match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
