@@ -2,6 +2,7 @@ import React from "react";
 import GlobalContext from "./globalContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
+import textList from "../data/home-data";
 
 class HomepageLayout extends React.Component {
     static contextTypes = GlobalContext;
@@ -16,11 +17,15 @@ class HomepageLayout extends React.Component {
     }
 
     render() {
+        const tf = textList;
+
         return (
             <GlobalContext.Consumer>
                 {({ toggleZen, zenmode, toggleSidebar }) => {
                     return (
-                        <div id="main" className="flex flex-col justify-between overflow-scroll h-screen">
+                        <div
+                            id="main"
+                            className="flex flex-col justify-between overflow-scroll h-screen max-w-screen-2xl">
                             {/* Top Bar */}
                             <div id="topbar" className="flex justify-between items-center pt-6">
                                 {/* Top Bar - Left Part */}
@@ -33,7 +38,7 @@ class HomepageLayout extends React.Component {
                                     <h2
                                         id="sign"
                                         className="transition duration-200 text-white text-opacity-40 subpixel-antialiased font-bold text-xl hover:text-opacity-95 select-none lg:pl-0 pl-2">
-                                        下雨的伞
+                                        {tf.sign}
                                     </h2>
                                 </div>
 
@@ -62,7 +67,7 @@ class HomepageLayout extends React.Component {
 
                                     <div
                                         id="lab"
-                                        className="transition duration-200 w-20 h-full flex justify-center items-center rounded-lg ease-in-out hover:scale-105 hover:bg-slate-100"
+                                        className="transition duration-200 h-full flex justify-center items-center rounded-lg ease-in-out hover:scale-105 hover:bg-slate-100"
                                         onMouseEnter={() => {
                                             this.setState({
                                                 labhover: true,
@@ -81,13 +86,13 @@ class HomepageLayout extends React.Component {
                                                     ? "text-black text-opacity-90"
                                                     : "text-white text-opacity-60",
                                             ].join(" ")}>
-                                            实验室
+                                            {tf.menu2}
                                         </h2>
                                     </div>
 
                                     <div
                                         id="record"
-                                        className="transition duration-200 w-16 h-full flex justify-center items-center rounded-lg ease-in-out hover:scale-105 hover:bg-slate-100"
+                                        className="transition duration-200 h-full flex justify-center items-center rounded-lg ease-in-out hover:scale-105 hover:bg-slate-100"
                                         onMouseEnter={() => {
                                             this.setState({
                                                 recordhover: true,
@@ -106,13 +111,18 @@ class HomepageLayout extends React.Component {
                                                     ? "text-black text-opacity-90"
                                                     : "text-white text-opacity-60",
                                             ].join(" ")}>
-                                            记录
+                                            {tf.menu3}
                                         </h2>
                                     </div>
                                 </div>
-                                <div id="menu-mobile" className="flex sm:hidden bg-white bg-opacity-20 mr-2 lg:mr-0 rounded-md"
-                                onClick={toggleSidebar}>
-                                    <FontAwesomeIcon icon={solid("bars")} className="text-white text-opacity-60 m-2 text-lg "/>
+                                <div
+                                    id="menu-mobile"
+                                    className="flex sm:hidden bg-white bg-opacity-20 mr-2 lg:mr-0 rounded-md"
+                                    onClick={toggleSidebar}>
+                                    <FontAwesomeIcon
+                                        icon={solid("bars")}
+                                        className="text-white text-opacity-60 m-2 text-lg "
+                                    />
                                 </div>
                             </div>
 
@@ -127,10 +137,10 @@ class HomepageLayout extends React.Component {
                                     <h2
                                         id="title"
                                         className="text-8xl text-gray-100 select-none sm:text-9xl subpixel-antialiased">
-                                        Seen
+                                        {tf.title}
                                     </h2>
                                     <p className="text-white text-opacity-30 font-semibold text-lg select-none subpixel-antialiased">
-                                        本站建设中...差多了
+                                        {tf.subtitle}
                                     </p>
                                 </div>
                             </div>
