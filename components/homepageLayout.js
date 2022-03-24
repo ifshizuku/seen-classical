@@ -13,8 +13,16 @@ class HomepageLayout extends React.Component {
         };
     }
 
-    toggleZen() {
-        this.props.toggleZen();
+    hovercLab = () => {
+        this.setState(state => ({
+            labhover: state.labhover === true ? false : true,
+        }));
+    }
+
+    hovercRecord = () => {
+        this.setState(state => ({
+            recordhover: state.recordhover === true ? false : true,
+        }));
     }
 
     render() {
@@ -45,7 +53,7 @@ class HomepageLayout extends React.Component {
                         <div
                             id="expend-button"
                             className="pl-4 pr-4 h-full flex justify-center items-center"
-                            onClick={() => this.toggleZen()}>
+                            onClick={this.props.toggleZen}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 id="menu-1"
@@ -62,16 +70,8 @@ class HomepageLayout extends React.Component {
                         <div
                             id="lab"
                             className="transition duration-200 pl-3 pr-3  h-full flex justify-center items-center rounded-lg ease-in-out hover:scale-105 hover:bg-slate-100"
-                            onMouseEnter={() => {
-                                this.setState({
-                                    labhover: true,
-                                });
-                            }}
-                            onMouseLeave={() => {
-                                this.setState({
-                                    labhover: false,
-                                });
-                            }}>
+                            onMouseEnter={this.hovercLab}
+                            onMouseLeave={this.hovercLab}>
                             <h2
                                 id="menu-2"
                                 className={[
@@ -85,16 +85,8 @@ class HomepageLayout extends React.Component {
                         <div
                             id="record"
                             className="transition duration-200 pl-3 pr-3 ml-2 h-full flex justify-center items-center rounded-lg ease-in-out hover:scale-105 hover:bg-slate-100"
-                            onMouseEnter={() => {
-                                this.setState({
-                                    recordhover: true,
-                                });
-                            }}
-                            onMouseLeave={() => {
-                                this.setState({
-                                    recordhover: false,
-                                });
-                            }}>
+                            onMouseEnter={this.hovercRecord}
+                            onMouseLeave={this.hovercRecord}>
                             <h2
                                 id="menu-3"
                                 className={[
@@ -110,7 +102,7 @@ class HomepageLayout extends React.Component {
                     <div
                         id="menu-mobile"
                         className="flex sm:hidden bg-white bg-opacity-20 mr-2 lg:mr-0 rounded-md"
-                        onClick={() => {}}>
+                        onClick={this.props.toggleSidebar}>
                         <FontAwesomeIcon icon={solid("bars")} className="text-white text-opacity-60 m-2 text-lg " />
                     </div>
                 </div>
@@ -121,7 +113,7 @@ class HomepageLayout extends React.Component {
                         "flex justify-center transition duration-700 ease-in-out",
                         zm ? "scale-110" : "scale-100",
                     ].join(" ")}
-                    onClick={() => this.toggleZen()}>
+                    onClick={this.props.toggleZen}>
                     <div className="flex flex-col justify-center items-center">
                         <h2 id="title" className="text-8xl text-gray-100 select-none sm:text-9xl subpixel-antialiased">
                             {tf.title}

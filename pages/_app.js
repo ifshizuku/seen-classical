@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import "../styles/if.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import React, { createContext } from "react";
+import React from "react";
 config.autoAddCss = false;
 
 
