@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Skills from "./skills";
 import React from "react";
-import textList from "../data/home-data";
+import Skills from "./skills";
+import textList from "./home-data";
 
 class SubpageProfile extends React.Component {
     render() {

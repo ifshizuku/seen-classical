@@ -1,6 +1,6 @@
 import HomepageLayout from "../components/homepageLayout";
-import SubpageProfile from "../components/subpageProfile";
 import React from "react";
+import SubpageProfile from "../components/subpageProfile";
 import Sidebar from "../components/sideBar";
 
 class HomePage extends React.Component {

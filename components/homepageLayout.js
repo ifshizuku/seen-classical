@@ -1,7 +1,7 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
-import textList from "../data/home-data";
+import React from "react";
+import textList from "./home-data";
 
 class HomepageLayout extends React.Component {
     constructor(props) {
@@ -14,16 +14,16 @@ class HomepageLayout extends React.Component {
     }
 
     hovercLab = () => {
-        this.setState(state => ({
+        this.setState((state) => ({
             labhover: state.labhover === true ? false : true,
         }));
-    }
+    };
 
     hovercRecord = () => {
-        this.setState(state => ({
+        this.setState((state) => ({
             recordhover: state.recordhover === true ? false : true,
         }));
-    }
+    };
 
     render() {
         const tf = textList;
@@ -53,7 +53,9 @@ class HomepageLayout extends React.Component {
                         <div
                             id="expend-button"
                             className="pl-4 pr-4 h-full flex justify-center items-center"
-                            onClick={this.props.toggleZen}>
+                            onClick={this.props.toggleZen}
+                            onKeyDown={this.props.toggleZen}
+                            role="button">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 id="menu-1"
@@ -102,7 +104,9 @@ class HomepageLayout extends React.Component {
                     <div
                         id="menu-mobile"
                         className="flex sm:hidden bg-white bg-opacity-20 mr-2 lg:mr-0 rounded-md"
-                        onClick={this.props.toggleSidebar}>
+                        onClick={this.props.toggleSidebar}
+                        onKeyDown={this.props.toggleSidebar}
+                        role="button">
                         <FontAwesomeIcon icon={solid("bars")} className="text-white text-opacity-60 m-2 text-lg " />
                     </div>
                 </div>
@@ -113,7 +117,9 @@ class HomepageLayout extends React.Component {
                         "flex justify-center transition duration-700 ease-in-out",
                         zm ? "scale-110" : "scale-100",
                     ].join(" ")}
-                    onClick={this.props.toggleZen}>
+                    onClick={this.props.toggleZen}
+                    onKeyDown={this.props.toggleZen}
+                    role="button">
                     <div className="flex flex-col justify-center items-center">
                         <h2 id="title" className="text-8xl text-gray-100 select-none sm:text-9xl subpixel-antialiased">
                             {tf.title}
