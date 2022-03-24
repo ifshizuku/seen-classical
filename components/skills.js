@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import skillList from "../data/skills-data";
 import React from "react";
+import skillList from "./skills-data";
 
 // Import Specific Icons
 import { faJsSquare, faReact, faSwift, faSketch } from "@fortawesome/free-brands-svg-icons"
@@ -62,7 +62,7 @@ class Skills extends React.Component {
                         <FontAwesomeIcon
                             size="2x"
                             icon={myIcons[fc]}
-                            color={[this.state.[item.hoverController] ? "#ffffff" : item.brandColor]}
+                            color={this.state.[item.hoverController] ? "#ffffff" : item.brandColor}
                             className="transition"
                             id={["icon_" + item.key]}
                         />

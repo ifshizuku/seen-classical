@@ -1,6 +1,13 @@
 # Seen 导航主页
 
-**慢速开发中...**
+<img 
+src="https://api.codiga.io/project/32073/score/svg"
+alt="Score"/>
+<img 
+src="https://api.codiga.io/project/32073/status/svg"
+alt="Status"/>
+
+**开发中...**
 
 ## 历史原因
 
