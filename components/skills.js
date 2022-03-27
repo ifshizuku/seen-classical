@@ -9,18 +9,10 @@ import { faCompassDrafting, faFilm, faFeatherPointed, faCamera, faPaintbrush, fa
 class Skills extends React.Component {
     constructor(props) {
         super(props);
-        // Hover State Default
+        const sl = skillList.map
+        
         this.state = {
-            jshover: false,
-            reacthover: false,
-            swifthover: false,
-            sketchhover: false,
-            designhover: false,
-            videohover: false,
-            writinghover: false,
-            photographyhover: false,
-            painthover: false,
-            guitarhover: false
+            [sl.hoverController]: false,
         };
     }
 
@@ -62,7 +54,7 @@ class Skills extends React.Component {
                         <FontAwesomeIcon
                             size="2x"
                             icon={myIcons[fc]}
-                            color={this.state.[item.hoverController] ? "#ffffff" : item.brandColor}
+                            color={this.state[item.hoverController] ? "#ffffff" : item.brandColor}
                             className="transition"
                             id={["icon_" + item.key]}
                         />
@@ -74,7 +66,7 @@ class Skills extends React.Component {
                         <div
                             className={[
                                 "w-full rounded bg-white bg-opacity-20 mt-0.5 flex transition-all",
-                                this.state.[item.hoverController] ? ["visible opacity-100 h-2"] : ["invisible opacity-0 h-0"]
+                                this.state[item.hoverController] ? ["visible opacity-100 h-2"] : ["invisible opacity-0 h-0"]
                             ].join(" ")}>
                             <div className={["h-full bg-white bg-opacity-80 rounded transition", item.process].join(" ")}></div>
                         </div>

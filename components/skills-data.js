@@ -6,7 +6,7 @@ const skillList = [
         icon: "js-square",
         brandColor: "#eed94d",
         hover: "hover:bg-yellow-300",
-        hoverController: "jshover",
+        hoverController: "faJsSquare",
         process: "w-3/4"
     },
     {
