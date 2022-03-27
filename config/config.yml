@@ -27,7 +27,7 @@ social:
       fullname: "Github"
       icon:
           series: brands
-          name: github
+          name: github-alt
       brandColor: "#24292e"
       hoverController: ghhover
       link: "https://github.com/ifshizuku"
@@ -49,6 +49,34 @@ social:
       brandColor: "#38bdf8"
       hoverController: bilihover
       link: "https://space.bilibili.com/365243793"
+    - id: "card-telegram"
+      key: "telegram"
+      fullname: "Telegram"
+      icon:
+          series: brands
+          name: telegram
+      brandColor: "#0088cc"
+      hoverController: telegramhover
+      link: "https://t.me/ifshizuku"
+    - id: "card-mail"
+      key: "mail"
+      fullname: "Mail"
+      icon:
+          series: solid
+          name: envelope
+      brandColor: "#f9a8d4"
+      hoverController: mailhover
+      link: "mailto:starsmoe@outlook.com"
+    - id: "card-qq"
+      key: "qq"
+      fullname: "QQ"
+      icon:
+          series: brands
+          name: qq
+      brandColor: "#7c7c7c"
+      hoverController: qqhover
+      link: "http://wpa.qq.com/msgrd?v=3&uin=2419155436&site=qq&menu=yes"
+    
 
 
 

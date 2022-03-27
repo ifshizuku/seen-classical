@@ -8,9 +8,11 @@ import {
     faReact,
     faSwift,
     faSketch,
-    faGithub,
+    faGithubAlt,
     faTwitter,
     faBilibili,
+    faTelegram,
+    faQq,
 } from "@fortawesome/free-brands-svg-icons";
 import {
     faCompassDrafting,
@@ -19,6 +21,7 @@ import {
     faCamera,
     faPaintbrush,
     faGuitar,
+    faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
@@ -34,9 +37,12 @@ library.add(
     faCamera,
     faPaintbrush,
     faGuitar,
-    faGithub,
+    faGithubAlt,
     faTwitter,
-    faBilibili
+    faBilibili,
+    faTelegram,
+    faEnvelope,
+    faQq
 );
 
 // Default Export

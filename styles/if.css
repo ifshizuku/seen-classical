@@ -12,6 +12,8 @@
 
 html {
     background-color: #18181b;
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
 }
 
 /* Custom - Title */

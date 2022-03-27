@@ -15,7 +15,7 @@ class Skills extends React.Component {
     render() {
         const items = siteConfig.skills.map((item) => {
             const hoverclass = classNames(
-                "flex bg-white bg-opacity-20 rounded-lg transition hover:bg-opacity-90 hover:scale-110 h-16",
+                "flex bg-white bg-opacity-20 rounded-lg transition hover:bg-opacity-90 hover:scale-110 h-16 hover:-translate-y-1",
                 item.hover
             );
             return (
