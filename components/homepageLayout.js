@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import React from "react";
-import textList from "./home-data";
+import siteConfig from "../components/toconfig";
 
 class HomepageLayout extends React.Component {
     constructor(props) {
@@ -26,7 +26,6 @@ class HomepageLayout extends React.Component {
     };
 
     render() {
-        const tf = textList;
         const zm = this.props.zenmode;
 
         return (
@@ -40,7 +39,7 @@ class HomepageLayout extends React.Component {
                         <h2
                             id="sign"
                             className="transition duration-200 text-white text-opacity-40 subpixel-antialiased font-bold text-xl hover:text-opacity-95 select-none lg:pl-0 pl-2">
-                            {tf.sign}
+                            {siteConfig.nav.sign}
                         </h2>
                     </div>
 
@@ -80,7 +79,7 @@ class HomepageLayout extends React.Component {
                                     "subpixel-antialiased font-semibold text-md select-none transition",
                                     this.state.labhover ? "text-black text-opacity-90" : "text-white text-opacity-60",
                                 ].join(" ")}>
-                                {tf.menu2}
+                                {siteConfig.nav.menu2}
                             </h2>
                         </div>
 
@@ -97,7 +96,7 @@ class HomepageLayout extends React.Component {
                                         ? "text-black text-opacity-90"
                                         : "text-white text-opacity-60",
                                 ].join(" ")}>
-                                {tf.menu3}
+                                {siteConfig.nav.menu3}
                             </h2>
                         </div>
                     </div>
@@ -122,10 +121,10 @@ class HomepageLayout extends React.Component {
                     role="button">
                     <div className="flex flex-col justify-center items-center">
                         <h2 id="title" className="text-8xl text-gray-100 select-none sm:text-9xl subpixel-antialiased">
-                            {tf.title}
+                            {siteConfig.nav.title}
                         </h2>
                         <p className="text-white text-opacity-30 font-semibold text-lg select-none subpixel-antialiased">
-                            {tf.subtitle}
+                            {siteConfig.nav.subtitle}
                         </p>
                     </div>
                 </div>

@@ -1,0 +1,124 @@
+# Site Meta Data
+meta:
+    title: "旧念 / Seen"
+    description: "川崎雫的个人导航站点，从过去走来，连接新的开始。旧念，只为昔见。15岁高中生，什么都会一点但什么都不专精的废柴。点子很多，但是没有什么特别的。被心情支配的工具人，开发方向集中在 Web 前端，自学了界面设计以及不少专业技能。除了一直都很累之外。x):"
+    keywords: "homepage, index, seen, Seen, 旧念, 川崎雫, Kawasaki Shizuku, Shizuku, Kawasaki, 雫, 个人站点, 博客, blog, personal site"
+    url: "https://seen.moe"
+
+# Site Navigation
+nav:
+    title: "Seen"
+    subtitle: "本站建设中...差多了"
+    sign: "下雨的伞"
+    menu2: "实验室"
+    menu3: "记录"
+
+# Profile
+profile:
+    intro: "川崎雫，来自中国的高一学生，无所事事的一般人。"
+    bioOne: "Forever / FORNEVER 。"
+    bioTwo: "追逐流逝的烟火，我的世界空无一物。"
+    description: "业余开发者，业余摄影爱好者，业余写手，业余视频制作，反正总而言之就是业余的就对了，技能点很泛，没什么专精的但什么都会，学习速度很快。被心情支配的工具人罢了，偶尔还是有点正常的情感和奇思妙想，或许。"
+
+# Skills
+skills:
+    - id: card-js
+      key: js
+      fullname: JavaScript
+      icon:
+          series: brands
+          name: js-square
+      brandColor: '#eed94d'
+      hover: 'hover:bg-yellow-300'
+      hoverController: jshover
+      process: w-3/4
+    - id: card-react
+      key: react
+      fullname: React JS
+      icon:
+          series: brands
+          name: react
+      brandColor: '#61dafb'
+      hover: 'hover:bg-sky-400'
+      hoverController: reacthover
+      process: w-1/2
+    - id: card-swift
+      key: swift
+      fullname: Swift
+      icon:
+          series: brands
+          name: swift
+      brandColor: '#f87171'
+      hover: 'hover:bg-orange-400'
+      hoverController: swifthover
+      process: w-1/4
+    - id: card-sketch
+      key: sketch
+      fullname: Sketch
+      icon:
+          series: brands
+          name: sketch
+      brandColor: '#fbbf24'
+      hover: 'hover:bg-yellow-400'
+      hoverController: sketchhover
+      process: w-5/6
+    - id: card-design
+      key: design
+      fullname: 界面设计
+      icon:
+          series: solid
+          name: compass-drafting
+      brandColor: '#7dd3fc'
+      hover: 'hover:bg-blue-400'
+      hoverController: designhover
+      process: w-3/4
+    - id: card-video
+      key: video
+      fullname: 视频制作
+      icon:
+          series: solid
+          name: film
+      brandColor: '#c4b5fd'
+      hover: 'hover:bg-violet-400'
+      hoverController: videohover
+      process: w-1/2
+    - id: card-writing
+      key: writing
+      fullname: 写作
+      icon:
+          series: solid
+          name: feather-pointed
+      brandColor: '#86efac'
+      hover: 'hover:bg-lime-400'
+      hoverController: writinghover
+      process: w-1/2
+    - id: card-photography
+      key: photography
+      fullname: 摄影
+      icon:
+          series: solid
+          name: camera
+      brandColor: '#fda4af'
+      hover: 'hover:bg-rose-400'
+      hoverController: photographyhover
+      process: w-1/2
+    - id: card-paint
+      key: paint
+      fullname: 绘画
+      icon:
+          series: solid
+          name: paint-brush
+      brandColor: '#93c5fd'
+      hover: 'hover:bg-indigo-400'
+      hoverController: painthover
+      process: w-1/4
+    - id: card-guitar
+      key: guitar
+      fullname: 吉他
+      icon:
+          series: solid
+          name: guitar
+      brandColor: '#f9a8d4'
+      hover: 'hover:bg-pink-400'
+      hoverController: guitarhover
+      process: w-3/4
