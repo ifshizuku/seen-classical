@@ -1,10 +1,6 @@
 import React from "react";
 
 class Wrap extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div
@@ -17,10 +13,6 @@ class Wrap extends React.Component {
 }
 
 class Content extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div id="content" className="flex w-screen justify-center items-center flex-col h-full">
