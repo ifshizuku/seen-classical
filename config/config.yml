@@ -26,8 +26,8 @@ skills:
       key: js
       fullname: JavaScript
       icon:
-        series: brands
-        name: js-square
+          series: brands
+          name: js-square
       brandColor: '#eed94d'
       hover: 'hover:bg-yellow-300'
       hoverController: jshover
@@ -36,8 +36,8 @@ skills:
       key: react
       fullname: React JS
       icon:
-        series: brands
-        name: react
+          series: brands
+          name: react
       brandColor: '#61dafb'
       hover: 'hover:bg-sky-400'
       hoverController: reacthover
@@ -46,8 +46,8 @@ skills:
       key: swift
       fullname: Swift
       icon:
-        series: brands
-        name: swift
+          series: brands
+          name: swift
       brandColor: '#f87171'
       hover: 'hover:bg-orange-400'
       hoverController: swifthover
@@ -56,8 +56,8 @@ skills:
       key: sketch
       fullname: Sketch
       icon:
-        series: brands
-        name: sketch
+          series: brands
+          name: sketch
       brandColor: '#fbbf24'
       hover: 'hover:bg-yellow-400'
       hoverController: sketchhover
@@ -66,8 +66,8 @@ skills:
       key: design
       fullname: 界面设计
       icon:
-        series: solid
-        name: compass-drafting
+          series: solid
+          name: compass-drafting
       brandColor: '#7dd3fc'
       hover: 'hover:bg-blue-400'
       hoverController: designhover
@@ -76,8 +76,8 @@ skills:
       key: video
       fullname: 视频制作
       icon:
-        series: solid
-        name: film
+          series: solid
+          name: film
       brandColor: '#c4b5fd'
       hover: 'hover:bg-violet-400'
       hoverController: videohover
@@ -86,8 +86,8 @@ skills:
       key: writing
       fullname: 写作
       icon:
-        series: solid
-        name: feather-pointed
+          series: solid
+          name: feather-pointed
       brandColor: '#86efac'
       hover: 'hover:bg-lime-400'
       hoverController: writinghover
@@ -96,8 +96,8 @@ skills:
       key: photography
       fullname: 摄影
       icon:
-        series: solid
-        name: camera
+          series: solid
+          name: camera
       brandColor: '#fda4af'
       hover: 'hover:bg-rose-400'
       hoverController: photographyhover
@@ -106,8 +106,8 @@ skills:
       key: paint
       fullname: 绘画
       icon:
-        series: solid
-        name: paint-brush
+          series: solid
+          name: paint-brush
       brandColor: '#93c5fd'
       hover: 'hover:bg-indigo-400'
       hoverController: painthover
@@ -116,8 +116,8 @@ skills:
       key: guitar
       fullname: 吉他
       icon:
-        series: solid
-        name: guitar
+          series: solid
+          name: guitar
       brandColor: '#f9a8d4'
       hover: 'hover:bg-pink-400'
       hoverController: guitarhover
