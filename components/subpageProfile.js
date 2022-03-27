@@ -1,11 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import Skills from "./skills";
-import textList from "./home-data";
+import siteConfig from "../components/toconfig";
 
 class SubpageProfile extends React.Component {
     render() {
-        const tf = textList;
         const zm = this.props.zenmode;
         return (
             <div
@@ -21,14 +20,14 @@ class SubpageProfile extends React.Component {
                     <div id="profile" className="flex flex-col-reverse lg:flex-row justify-between items-center">
                         <div className="pt-5 lg:w-2/3 w-11/12">
                             <p className="text-slate-200 text-lg font-medium subpixel-antialiased mt-4 lg:mt-0">
-                                {tf.intro1}
+                                {siteConfig.profile.intro}
                                 <br />
-                                {tf.intro2}
+                                {siteConfig.profile.bioOne}
                                 <br />
-                                {tf.intro3}
+                                {siteConfig.profile.bioTwo}
                             </p>
                             <br />
-                            <p className="text-slate-300 text-lg font-regular subpixel-antialiased">{tf.description}</p>
+                            <p className="text-slate-300 text-lg font-regular subpixel-antialiased">{siteConfig.profile.description}</p>
                         </div>
                         <div className="lg:w-56 lg:h-56 w-44 h-44 lg:mr-4 mr-0 mt-6 lg:mt-0">
                             <Image

@@ -4,6 +4,7 @@ import HomepageLayout from "../components/homepageLayout";
 import React from "react";
 import SubpageProfile from "../components/subpageProfile";
 import Sidebar from "../components/sideBar";
+import siteConfig from "../components/toconfig";
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -13,6 +14,7 @@ class HomePage extends React.Component {
         };
         this.toggleZen = this.toggleZen.bind(this);
         this.toggleSidebar = this.toggleSidebar.bind(this);
+        // console.log(siteConfig);
     }
 
     toggleZen() {
@@ -31,7 +33,9 @@ class HomePage extends React.Component {
         return (
             <Wrap>
                 <Head>
-                    <title>Seen / 旧念</title>
+                    <title>{siteConfig.meta.title}</title>
+                    <meta name="description" content={siteConfig.meta.description} />
+                    <meta name="keywords" content={siteConfig.meta.keywords} />
                 </Head>
                 <Content>
                     <HomepageLayout

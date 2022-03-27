@@ -1,18 +1,18 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import skillList from "./skills-data";
+import siteConfig from "../components/toconfig";
 
 class Skills extends React.Component {
     constructor(props) {
         super(props);
-        const sl = skillList.map;
+        const sl = siteConfig.skills.map;
         this.state = {
             [sl.hoverController]: false,
         };
     }
 
     render() {
-        const items = skillList.map((item) => {
+        const items = siteConfig.skills.map((item) => {
             return (
                 <div
                     id={item.id}
