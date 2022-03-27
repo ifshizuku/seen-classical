@@ -1,8 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import siteConfig from "../components/toconfig";
-import Image from "next/image";
-import classNames from "classnames";
 
 class Social extends React.Component {
     constructor(props) {
