@@ -1,52 +1,25 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import skillList from "../data/skills-data";
 import React from "react";
-
-// Import Specific Icons
-import { faJsSquare, faReact, faSwift, faSketch } from "@fortawesome/free-brands-svg-icons"
-import { faCompassDrafting, faFilm, faFeatherPointed, faCamera, faPaintbrush, faGuitar} from "@fortawesome/free-solid-svg-icons"
+import skillList from "./skills-data";
 
 class Skills extends React.Component {
     constructor(props) {
         super(props);
-        // Hover State Default
+        const sl = skillList.map;
         this.state = {
-            jshover: false,
-            reacthover: false,
-            swifthover: false,
-            sketchhover: false,
-            designhover: false,
-            videohover: false,
-            writinghover: false,
-            photographyhover: false,
-            painthover: false,
-            guitarhover: false
+            [sl.hoverController]: false,
         };
     }
 
     render() {
         const items = skillList.map((item) => {
-
-            // Icons Dictionary
-            const myIcons = {
-                js: faJsSquare,
-                react: faReact,
-                swift: faSwift,
-                sketch: faSketch,
-                design: faCompassDrafting,
-                video: faFilm,
-                writing: faFeatherPointed,
-                photography: faCamera,
-                paint: faPaintbrush,
-                guitar: faGuitar
-              };
-            //   Finding
-            const fc = item.key;
-
             return (
                 <div
                     id={item.id}
-                    className={["flex bg-white bg-opacity-20 rounded-lg transition hover:bg-opacity-90 hover:scale-110 h-16", [item.hover]].join(" ")}
+                    className={[
+                        "flex bg-white bg-opacity-20 rounded-lg transition hover:bg-opacity-90 hover:scale-110 h-16",
+                        [item.hover],
+                    ].join(" ")}
                     key={item.key}
                     onMouseEnter={() => {
                         this.setState({
@@ -61,8 +34,8 @@ class Skills extends React.Component {
                     <div className="flex justify-center items-center lg:mt-3.5 lg:mb-3.5 mt-2 mb-2 lg:ml-5 ml-4">
                         <FontAwesomeIcon
                             size="2x"
-                            icon={myIcons[fc]}
-                            color={[this.state.[item.hoverController] ? "#ffffff" : item.brandColor]}
+                            icon={["fa-" + item.icon.series, "fa-" + item.icon.name].join(" ")}
+                            color={this.state[item.hoverController] ? "#ffffff" : item.brandColor}
                             className="transition"
                             id={["icon_" + item.key]}
                         />
@@ -74,9 +47,14 @@ class Skills extends React.Component {
                         <div
                             className={[
                                 "w-full rounded bg-white bg-opacity-20 mt-0.5 flex transition-all",
-                                this.state.[item.hoverController] ? ["visible opacity-100 h-2"] : ["invisible opacity-0 h-0"]
+                                this.state[item.hoverController]
+                                    ? ["visible opacity-100 h-2"]
+                                    : ["invisible opacity-0 h-0"],
                             ].join(" ")}>
-                            <div className={["h-full bg-white bg-opacity-80 rounded transition", item.process].join(" ")}></div>
+                            <div
+                                className={["h-full bg-white bg-opacity-80 rounded transition", item.process].join(
+                                    " "
+                                )}></div>
                         </div>
                     </div>
                 </div>
@@ -91,7 +69,6 @@ class Skills extends React.Component {
             </div>
         );
     }
-
 }
 
 export default Skills;
