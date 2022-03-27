@@ -3,7 +3,15 @@ import "../styles/if.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config, library } from "@fortawesome/fontawesome-svg-core";
 // Import Specific Icons
-import { faJsSquare, faReact, faSwift, faSketch } from "@fortawesome/free-brands-svg-icons";
+import {
+    faJsSquare,
+    faReact,
+    faSwift,
+    faSketch,
+    faGithub,
+    faTwitter,
+    faBilibili,
+} from "@fortawesome/free-brands-svg-icons";
 import {
     faCompassDrafting,
     faFilm,
@@ -25,7 +33,10 @@ library.add(
     faFeatherPointed,
     faCamera,
     faPaintbrush,
-    faGuitar
+    faGuitar,
+    faGithub,
+    faTwitter,
+    faBilibili
 );
 
 // Default Export

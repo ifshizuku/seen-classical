@@ -46,9 +46,9 @@ social:
       icon:
           series: brands
           name: bilibili
-      brandColor: "#fad000"
-      hoverController: twhover
-      link: "https://twitter.com/ifshizuku"
+      brandColor: "#38bdf8"
+      hoverController: bilihover
+      link: "https://space.bilibili.com/365243793"
 
 
 
