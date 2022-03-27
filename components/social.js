@@ -3,7 +3,8 @@ import React from "react";
 import siteConfig from "../components/toconfig";
 import classNames from "classnames";
 
-class Skills extends React.Component {
+
+class Social extends React.Component {
     constructor(props) {
         super(props);
         const sl = siteConfig.skills.map;
@@ -14,10 +15,7 @@ class Skills extends React.Component {
 
     render() {
         const items = siteConfig.skills.map((item) => {
-            const hoverclass = classNames(
-                "flex bg-white bg-opacity-20 rounded-lg transition hover:bg-opacity-90 hover:scale-110 h-16",
-                item.hover
-            );
+            const hoverclass = classNames("flex bg-white bg-opacity-20 rounded-lg transition hover:bg-opacity-90 hover:scale-110 h-16", item.hover)
             return (
                 <div
                     id={item.id}
@@ -73,4 +71,4 @@ class Skills extends React.Component {
     }
 }
 
-export default Skills;
+export default Social;

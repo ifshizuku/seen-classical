@@ -45,6 +45,10 @@ class SubpageProfile extends React.Component {
                         </div>
 
                         <Skills />
+
+                        <div>
+                            <h3 className="text-slate-50 text-2xl font-bold subpixel-antialiased mt-8">Catch Me</h3>
+                        </div>
                     </div>
                 </div>
             </div>

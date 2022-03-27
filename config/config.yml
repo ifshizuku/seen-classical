@@ -20,6 +20,38 @@ profile:
     bioTwo: "追逐流逝的烟火，我的世界空无一物。"
     description: "业余开发者，业余摄影爱好者，业余写手，业余视频制作，反正总而言之就是业余的就对了，技能点很泛，没什么专精的但什么都会，学习速度很快。被心情支配的工具人罢了，偶尔还是有点正常的情感和奇思妙想，或许。"
 
+# Social
+social:
+    - id: "card-github"
+      key: "gh"
+      fullname: "Github"
+      icon:
+          series: brands
+          name: github
+      brandColor: "#24292e"
+      hoverController: ghhover
+      link: "https://github.com/ifshizuku"
+    - id: "card-twitter"
+      key: "tw"
+      fullname: "Twitter"
+      icon:
+          series: brands
+          name: twitter
+      brandColor: "#1da1f2"
+      hoverController: twhover
+      link: "https://twitter.com/ifshizuku"
+    - id: "card-bilibili"
+      key: "bili"
+      fullname: "Bilibili"
+      icon:
+          series: brands
+          name: bilibili
+      brandColor: "#fad000"
+      hoverController: twhover
+      link: "https://twitter.com/ifshizuku"
+
+
+
 # Skills
 skills:
     - id: card-js
