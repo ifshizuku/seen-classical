@@ -1,8 +1,9 @@
+import { Wrap, Content } from "../components/layout";
+import Head from "next/head";
 import HomepageLayout from "../components/homepageLayout";
 import React from "react";
 import SubpageProfile from "../components/subpageProfile";
 import Sidebar from "../components/sideBar";
-import Head from "next/head";
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -28,14 +29,11 @@ class HomePage extends React.Component {
 
     render() {
         return (
-            <div
-                id="wrap"
-                className="transition w-full h-full bg-cover bg-center bg-fixed bg-[url('https://seen-1302639736.file.myqcloud.com/site-data/homepage/bg-05.webp')] -z-10">
+            <Wrap>
                 <Head>
                     <title>Seen / 旧念</title>
                 </Head>
-                {/* Content */}
-                <div id="content" className="flex w-screen justify-center items-center flex-col h-full">
+                <Content>
                     <HomepageLayout
                         zenmode={this.state.zenmode}
                         toggleZen={this.toggleZen}
@@ -43,10 +41,10 @@ class HomePage extends React.Component {
                     />
 
                     <SubpageProfile zenmode={this.state.zenmode} />
-                </div>
+                </Content>
 
                 <Sidebar sidebar={this.state.sidebar} toggleSidebar={this.toggleSidebar} />
-            </div>
+            </Wrap>
         );
     }
 }
