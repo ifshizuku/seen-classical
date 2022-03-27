@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Skills from "./skills";
+import Social from "./social";
 import siteConfig from "../components/toconfig";
 
 class SubpageProfile extends React.Component {
@@ -45,6 +46,12 @@ class SubpageProfile extends React.Component {
                         </div>
 
                         <Skills />
+
+                        <div>
+                            <h3 className="text-slate-50 text-2xl font-bold subpixel-antialiased mt-8">Catch Me</h3>
+                        </div>
+
+                        <Social />
                     </div>
                 </div>
             </div>

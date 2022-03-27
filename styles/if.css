@@ -12,6 +12,8 @@
 
 html {
     background-color: #18181b;
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
 }
 
 /* Custom - Title */
@@ -27,3 +29,71 @@ html {
 #icon_guitar {
     font-size: 1.6rem;
 }
+
+/* Hover Fix */
+/* .hover\:bg-yellow-300:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(253 224 71 / var(--tw-bg-opacity));
+}
+.hover\:bg-sky-400:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(56 189 248 / var(--tw-bg-opacity));
+}
+.hover\:bg-orange-400:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(251 146 60 / var(--tw-bg-opacity));
+}
+.hover\:bg-yellow-400:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+}
+.hover\:bg-blue-400:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+}
+.hover\:bg-violet-400:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(167 139 250 / var(--tw-bg-opacity));
+}
+.hover\:bg-lime-400:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(163 230 53 / var(--tw-bg-opacity));
+}
+.hover\:bg-rose-400:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(251 113 133 / var(--tw-bg-opacity));
+}
+.hover\:bg-indigo-400:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(129 140 248 / var(--tw-bg-opacity));
+}
+.hover\:bg-pink-400:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(244 114 182 / var(--tw-bg-opacity));
+}
+.hover\:bg-opacity-90:hover {
+    --tw-bg-opacity: 0.9;
+}
+.hover\:text-opacity-95:hover {
+    --tw-text-opacity: 0.95;
+}
+
+.w-5\/6 {
+    width: 83.333333%;
+}
+
+.w-3\/4 {
+    width: 75%;
+}
+
+.w-1\/2 {
+    width: 50%;
+}
+
+.w-1\/4 {
+    width: 25%;
+}
+
+.w-11\/12 {
+    width: 91.666667%;
+} */

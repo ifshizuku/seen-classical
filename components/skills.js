@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import siteConfig from "../components/toconfig";
+import classNames from "classnames";
 
 class Skills extends React.Component {
     constructor(props) {
@@ -13,13 +14,14 @@ class Skills extends React.Component {
 
     render() {
         const items = siteConfig.skills.map((item) => {
+            const hoverclass = classNames(
+                "flex bg-white bg-opacity-20 rounded-lg transition hover:bg-opacity-90 hover:scale-110 h-16 hover:-translate-y-1",
+                item.hover
+            );
             return (
                 <div
                     id={item.id}
-                    className={[
-                        "flex bg-white bg-opacity-20 rounded-lg transition hover:bg-opacity-90 hover:scale-110 h-16",
-                        [item.hover],
-                    ].join(" ")}
+                    className={hoverclass}
                     key={item.key}
                     onMouseEnter={() => {
                         this.setState({
