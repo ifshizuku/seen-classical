@@ -13,7 +13,8 @@ class MainTitle extends React.Component {
             ].join(" ")}
             onClick={this.props.toggleZen}
             onKeyDown={this.props.toggleZen}
-            role="button">
+            role="button"
+            tabIndex="-1">
             <div className="flex flex-col justify-center items-center">
                 <h2 id="title" className="text-8xl text-gray-100 select-none sm:text-9xl subpixel-antialiased">
                     {siteConfig.nav.title}

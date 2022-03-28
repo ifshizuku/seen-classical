@@ -64,7 +64,8 @@ class HomepageLayout extends React.Component {
                             className="pl-4 pr-4 h-full flex justify-center items-center"
                             onClick={this.props.toggleZen}
                             onKeyDown={this.props.toggleZen}
-                            role="button">
+                            role="button"
+                            tabIndex="0">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 id="menu-1"
@@ -85,7 +86,8 @@ class HomepageLayout extends React.Component {
                         className="flex sm:hidden bg-white bg-opacity-20 mr-2 lg:mr-0 rounded-md"
                         onClick={this.props.toggleSidebar}
                         onKeyDown={this.props.toggleSidebar}
-                        role="button">
+                        role="button"
+                        tabIndex="-1">
                         <FontAwesomeIcon icon={solid("bars")} className="text-white text-opacity-60 m-2 text-lg " />
                     </div>
                 </div>
