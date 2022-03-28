@@ -1,4 +1,5 @@
 import { Wrap, Content } from "../components/layout";
+import Footer from "../components/footer";
 import Head from "next/head";
 import HomepageLayout from "../components/homepageLayout";
 import React from "react";
@@ -47,6 +48,8 @@ class HomePage extends React.Component {
                     <SubpageProfile zenmode={this.state.zenmode} />
                 </Content>
 
+                <Footer />
+                
                 <Sidebar sidebar={this.state.sidebar} toggleSidebar={this.toggleSidebar} />
             </Wrap>
         );
