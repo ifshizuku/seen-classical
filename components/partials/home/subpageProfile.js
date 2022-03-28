@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Skills from "./skills";
 import Social from "./social";
-import siteConfig from "../components/toconfig";
+import siteConfig from "../../toconfig";
 
 class SubpageProfile extends React.Component {
     render() {

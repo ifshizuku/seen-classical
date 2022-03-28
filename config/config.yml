@@ -10,8 +10,13 @@ nav:
     title: "Seen"
     subtitle: "本站建设中...差多了"
     sign: "下雨的伞"
-    menu2: "实验室"
-    menu3: "记录"
+    menu:
+        - name: "实验室"
+          url: "https://seen.moe/lab"
+          key: "lab"
+        - name: "记录"
+          url: "https://seen.moe/record"
+          key: "record"
 
 # Profile
 profile:

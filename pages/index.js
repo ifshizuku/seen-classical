@@ -1,9 +1,9 @@
-import { Wrap, Content } from "../components/layout";
-import Footer from "../components/footer";
+import { Wrap, Content } from "../components/partials/home/layout";
+import Footer from "../components/partials/global/footer";
 import Head from "next/head";
-import HomepageLayout from "../components/homepageLayout";
+import HomepageLayout from "../components/partials/home/homepageLayout";
 import React from "react";
-import SubpageProfile from "../components/subpageProfile";
+import SubpageProfile from "../components/partials/home/subpageProfile";
 import Sidebar from "../components/sideBar";
 import siteConfig from "../components/toconfig";
 

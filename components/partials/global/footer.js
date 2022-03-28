@@ -1,5 +1,5 @@
 import React from "react";
-import siteConfig from "../components/toconfig";
+import siteConfig from "../../toconfig";
 
 class Footer extends React.Component {
     // constructor(props) {
