@@ -9,7 +9,7 @@ class Footer extends React.Component {
     render() {
         return (
             <div id="footer" className="flex justify-center items-center pb-10">
-                <div className="flex md:flex-row flex-col justify-between items-center md:w-5/6 w-11/12">
+                <div className="flex md:flex-row flex-col justify-between items-center md:w-5/6 w-11/12 max-w-6xl">
                     <div className="bg-zinc-800 md:bg-opacity-25 bg-opacity-0 md:backdrop-blur-lg rounded-lg">
                         <p className="transition duration-200 select-none text-white text-opacity-75 text-lg font-medium subpixel-antialiased mt-1.5 mb-1.5 ml-2 mr-2 hover:text-opacity-95">
                             {siteConfig.footer.text}
