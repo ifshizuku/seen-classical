@@ -94,19 +94,20 @@ function useHitokoto(options) {
     if (aro === false) {
         swrc = {
             revalidateOnFocus: false,
-            revalidateOnMount: false,
             revalidateOnReconnect: false,
+            refreshInterval: 0,
+            refreshWhenHidden: false,
+            refreshWhenOffline: false,
+            revalidateIfStale: false,
         };
     } else if (aro === true) {
         swrc = {
             revalidateOnFocus: true,
-            revalidateOnMount: true,
             revalidateOnReconnect: true,
         };
     } else if (typeof aro == "undefined") {
         swrc = {
             revalidateOnFocus: true,
-            revalidateOnMount: true,
             revalidateOnReconnect: true,
         };
     } else {
@@ -118,7 +119,7 @@ function useHitokoto(options) {
     if (r_encode === "json") {
         ({ data, error, mutate } = useSWR(url, ptj, { swrc }));
     } else if (r_encode === "text") {
-        ({ data, error, mutate } = useSWR(url, ptf, { swrc }));
+        ({ data, error, mutate } = useSWR(url, ptf, swrc));
     }
 
     return { data, error, mutate };
