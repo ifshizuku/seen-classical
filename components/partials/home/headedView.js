@@ -1,6 +1,6 @@
 import classNames from "classnames";
-import HvDynamicStatus from "./includes/HvDynamicStatus";
-import HvSiteInfo from "./includes/HvSiteInfo";
+import HvDynamicStatus from "./includes/hvDynamicStatus";
+import HvSiteInfo from "./includes/hvSiteInfo";
 
 function HeadedView(props) {
     return (
