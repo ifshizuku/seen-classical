@@ -9,11 +9,19 @@ meta:
         locale: "zh_CN"
         siteName: "旧念 / Seen"
     tw:
+        image: "https://seen.moe/icons/android-chrome-192x192.png"
         title: "Seen 导航页，从这里开始连接"
+        card: "旧念 / Seen"
+        link: "https://seen.moe"
+        description: "这里是川崎雫的个人站点。一个什么都会但什么都不专精的废柴。欢迎来到我的世界，我会一直都在这里。"
+        creator: "Kawasaki Shizuku"
+    pwa:
+        name: "Seen"
+        appleMobileWebAppTitle: "Seen"
 
 headedView:
     backgroundImage: "https://seen-1302639736.file.myqcloud.com/site-data/homepage/bg-05.webp"
     i:
-        info: "Seen"
+        info: "Seens"
     ds:
         title: "Seen"

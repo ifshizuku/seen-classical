@@ -1,3 +1,4 @@
+const withPWA = require('next-pwa')
 // next.config.js
 module.exports = {
     i18n: {
@@ -9,3 +10,9 @@ module.exports = {
         domains: ["seen-1302639736.file.myqcloud.com"],
     },
 };
+
+module.exports = withPWA({
+    pwa: {
+      dest: 'public'
+    }
+  })
