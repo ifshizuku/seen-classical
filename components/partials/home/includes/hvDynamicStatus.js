@@ -16,12 +16,15 @@ function HvDynamicStatus(props) {
         <div id="hv-dynamic-status-set">
             {/* Hero */}
             <div id="hv-dynamic-textup">
-                <h2 className={classNames("text-white font-bold text-7xl text-opacity-100 subpixel-antialiased")}>
+                <h2
+                    className={classNames(
+                        "text-white font-bold md:text-7xl text-5xl text-opacity-100 subpixel-antialiased"
+                    )}>
                     {mTitle}
                 </h2>
                 <h3
                     className={classNames(
-                        "text-white font-medium text-2xl text-opacity-40 underline underline-offset-4 subpixel-antialiased",
+                        "text-white font-medium md:text-2xl text-xl text-opacity-40 underline underline-offset-4 subpixel-antialiased",
                         "mt-3"
                     )}>
                     {sTitle}
@@ -51,7 +54,7 @@ function HvDynamicStatus(props) {
             <div id="hv-dynamic-status-sentence">
                 <p
                     className={classNames(
-                        "text-white font-medium text-2xl text-opacity-80 subpixel-antialiased",
+                        "text-white font-medium md:text-2xl text-xl text-opacity-80 subpixel-antialiased",
                         "font-dancing",
                         "mt-2"
                     )}>
@@ -59,8 +62,12 @@ function HvDynamicStatus(props) {
                 </p>
             </div>
             <div id="hv-dynamic-status-more" className={classNames("flex items-center gap-2.5", "mt-1.5")}>
-                <i id="hv-dynamic-status-more-icon" className={classNames("fa-solid fa-arrow-down-short-wide", "text-white text-opacity-80")}></i>
-                <p id="hv-dynamic-status-more-text" className={classNames("font-medium text-white text-opacity-80 text-lg")}>更多...</p>
+                {/* <i id="hv-dynamic-status-more-icon" className={classNames("fa-solid fa-arrow-down-short-wide", "text-white text-opacity-80")}></i> */}
+                <p
+                    id="hv-dynamic-status-more-text"
+                    className={classNames("font-medium text-white text-opacity-80 text-lg")}>
+                    更多...
+                </p>
             </div>
         </div>
     );
