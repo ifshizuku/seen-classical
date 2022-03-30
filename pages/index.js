@@ -7,7 +7,7 @@ import Script from 'next/script'
 function HomePage() {
     return (
         <Layout config={siteConfig.meta}>
-            <Script src="https://kit.fontawesome.com/867533c6ed.js" strategy="afterInteractive" />
+            {/* <Script src="https://kit.fontawesome.com/867533c6ed.js" strategy="afterInteractive" /> */}
             <HeadedView config={siteConfig.headedView} />
         </Layout>
     );
