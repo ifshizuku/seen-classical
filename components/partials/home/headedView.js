@@ -28,7 +28,7 @@ function HeadedView(props) {
                         <HvSiteInfo config={props.config.i} />
                     </div>
 
-                    <div id="hv-split-bottom" className={classNames("w-full", "flex grow items-end", "mb-8 ml-6")}>
+                    <div id="hv-split-bottom" className={classNames("w-full", "flex grow items-end", "md:mb-10 mb-8 md:ml-6")}>
                         <HvDynamicStatus config={props.config.ds} />
                     </div>
                 </div>
