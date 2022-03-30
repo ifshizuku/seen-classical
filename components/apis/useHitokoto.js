@@ -115,14 +115,14 @@ function useHitokoto(options) {
     }
 
     // 选择合适的方法
-    let data, error, mutate;
+    let data, error, mutate, isValidating;
     if (r_encode === "json") {
-        ({ data, error, mutate } = useSWR(url, ptj, swrc));
+        ({ data, error, mutate, isValidating } = useSWR(url, ptj, swrc));
     } else if (r_encode === "text") {
-        ({ data, error, mutate } = useSWR(url, ptf, swrc));
+        ({ data, error, mutate, isValidating } = useSWR(url, ptf, swrc));
     }
 
-    return { data, error, mutate };
+    return { data, error, mutate, isValidating };
 }
 
 export default useHitokoto;

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import classNames from "classnames";
 import useHitokoto from "../../../apis/useHitokoto";
 
@@ -20,14 +21,14 @@ function HvDynamicStatus(props) {
                     className={classNames(
                         "text-white font-bold md:text-7xl text-5xl text-opacity-100 subpixel-antialiased"
                     )}>
-                    {mTitle}
+                    {(!mTitle) ? "期待你的声音..." : mTitle}
                 </h2>
                 <h3
                     className={classNames(
                         "text-white font-medium md:text-2xl text-xl text-opacity-40 underline underline-offset-4 subpixel-antialiased",
                         "mt-3"
                     )}>
-                    {sTitle}
+                    {(!sTitle) ? "Loading..." : sTitle}
                 </h3>
             </div>
 
