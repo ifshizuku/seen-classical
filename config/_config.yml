@@ -22,6 +22,9 @@ meta:
 headedView:
     backgroundImage: "https://seen-1302639736.file.myqcloud.com/site-data/homepage/bg-05.webp"
     i:
-        info: "Seens"
+        info: "Seen"
     ds:
-        title: "Seen"
+        sentence: "Kawasaki Shizuku / Rainy Umbrella"
+        moreicon:
+            series: "solid"
+            icon: "fa-arrow-down-short-wide"
