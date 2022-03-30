@@ -9,16 +9,14 @@ function HeadedView(props) {
             className={classNames("w-full h-screen", "flex justify-center items-center", [
                 "bg-[url('" + props.config.backgroundImage + "')]",
                 "bg-cover bg-center",
-            ])}
-            role="with-background">
+            ])}>
             <div
                 id="hv-container"
                 className={classNames(
                     "w-full h-full",
                     "flex flex-col justify-center items-center",
                     "bg-gradient-to-t from-zinc-800 via-[#00000000]"
-                )}
-                role="with-background-cover">
+                )}>
                 <div
                     id="hv-content"
                     className={classNames("w-11/12 h-full", "flex flex-col justify-center items-center")}>

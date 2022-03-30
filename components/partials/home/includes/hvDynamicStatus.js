@@ -12,7 +12,6 @@ function HvDynamicStatus(props) {
         error: sError,
         mutate: sMutate,
     } = useHitokoto({ collection: "anime", type: "text", min: 8, max: 20, ar: false });
-    const a = "arrow-down-short-wide";
     return (
         <div id="hv-dynamic-status-set">
             {/* Hero */}
