@@ -117,7 +117,7 @@ function useHitokoto(options) {
     // 选择合适的方法
     let data, error, mutate;
     if (r_encode === "json") {
-        ({ data, error, mutate } = useSWR(url, ptj, { swrc }));
+        ({ data, error, mutate } = useSWR(url, ptj, swrc));
     } else if (r_encode === "text") {
         ({ data, error, mutate } = useSWR(url, ptf, swrc));
     }
