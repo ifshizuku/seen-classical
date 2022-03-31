@@ -181,16 +181,16 @@ module.exports = [
             networkTimeoutSeconds: 10,
         },
     },
-    {
-        urlPattern: /^https:\/\/vitals.vercel-insights.com*/i,
-        handler: "StaleWhileRevalidate",
-        method: "POST",
-        options: {
-            cacheName: "vercel-insights",
-            expiration: {
-                maxEntries: 32,
-                maxAgeSeconds: 60 * 60, // 1 hour
-            },
-        },
-    },
+    // {
+    //     urlPattern: /^https:\/\/vitals.vercel-insights.com*/i,
+    //     handler: "StaleWhileRevalidate",
+    //     method: "POST",
+    //     options: {
+    //         cacheName: "vercel-insights",
+    //         expiration: {
+    //             maxEntries: 32,
+    //             maxAgeSeconds: 60 * 60, // 1 hour
+    //         },
+    //     },
+    // },
 ];
