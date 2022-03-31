@@ -1,5 +1,5 @@
 const withPWA = require("next-pwa");
-const runtimeCaching = require("next-pwa/cache");
+const runtimeCaching = require("./swc/cache.js");
 // next.config.js
 module.exports = {
     i18n: {
