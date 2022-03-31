@@ -183,7 +183,7 @@ module.exports = [
     },
     {
         urlPattern: /^https:\/\/vitals.vercel-insights.com*/i,
-        handler: "NetworkOnly",
+        handler: "StaleWhileRevalidate",
         method: "POST",
         options: {
             cacheName: "vercel-insights",
