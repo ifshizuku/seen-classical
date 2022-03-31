@@ -45,7 +45,7 @@ function Wrap(props) {
                 <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
                 <link rel="manifest" href="/site.webmanifest" />
                 <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#27272a" />
-                <link rel="shortcut icon" href="/favicon.ico" />
+                <link rel="shortcut icon" href="/icons/favicon.ico" />
 
                 <link
                     rel="apple-touch-startup-image"

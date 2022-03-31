@@ -1,23 +1,23 @@
 import { useState, useEffect } from "react";
 
 function useNetwork() {
-    const [isOnline, setOnline] = useState(true);
+    const [isOnline, setNetwork] = useState(true);
 
-    const updateOnline = () => {
-        setOnline(window.navigator.onLine);
+    const updateNetwork = () => {
+        setNetwork(window.navigator.onLine);
     };
 
     useEffect(() => {
-        updateOnline();
+        updateNetwork();
 
-        window.addEventListener("online", updateOnline);
+        window.addEventListener("offline", updateNetwork);
 
-        window.addEventListener("offline", updateOnline);
+        window.addEventListener("online", updateNetwork);
 
         return () => {
-            window.removeEventListener("online", updateOnline);
+            window.removeEventListener("offline", updateNetwork);
 
-            window.removeEventListener("offline", updateOnline);
+            window.removeEventListener("online", updateNetwork);
         };
     });
 
