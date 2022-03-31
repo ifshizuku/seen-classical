@@ -46,7 +46,7 @@ function HvDynamicStatus(props) {
                 </p>
             </div>
             <div id="hv-dynamic-status-more" className={classNames("flex items-center gap-2.5", "mt-1.5")}>
-                {/* <i id="hv-dynamic-status-more-icon" className={classNames("fa-solid fa-arrow-down-short-wide", "text-white text-opacity-80")}></i> */}
+                <i id="hv-dynamic-status-more-icon" className={classNames("fa-solid fa-arrow-down-short-wide", "text-white text-opacity-80")}></i>
                 <p id="hv-dynamic-status-more-text" className={classNames("font-medium text-white text-opacity-80 text-lg", "select-none")}>
                     更多...
                 </p>

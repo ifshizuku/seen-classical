@@ -6,11 +6,10 @@ module.exports = {
         locales: ["zh-CN"],
         defaultLocale: "zh-CN",
     },
-    webpack5: true,
     images: {
         domains: ["seen-1302639736.file.myqcloud.com"],
     },
-    webpack: {},
+    webpack5: true,
 };
 
 module.exports = withPWA({

@@ -1,7 +1,11 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* Headed View */
 
 .font-dancing {
-    font-family: 'Dancing Script', cursive;
+    font-family: "Dancing Script", cursive;
 }
 
 /* #hv-content {

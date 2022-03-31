@@ -3,7 +3,7 @@ import Head from "next/head";
 
 function Wrap(props) {
     return (
-        <div id="wrap" className="w-full h-full">
+        <div id="wrap" className="w-full h-full ">
             {/* Meta Data */}
             <Head>
                 <meta charSet="utf-8" />
