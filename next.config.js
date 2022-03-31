@@ -15,7 +15,6 @@ module.exports = {
 
 module.exports = withPWA({
     pwa: {
-        customWorkerDir: "swc",
         // disable: true,
         dest: "public",
         runtimeCaching,
