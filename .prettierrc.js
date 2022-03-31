@@ -1,6 +1,6 @@
 module.exports = {
-  printWidth: 120,
-  bracketSameLine: true,
-  // htmlWhitespaceSensitivity: ignore,
-  tabWidth: 4,
+    printWidth: 160,
+    bracketSameLine: true,
+    // htmlWhitespaceSensitivity: ignore,
+    tabWidth: 4,
 };
