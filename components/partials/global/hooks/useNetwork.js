@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 function useNetwork() {
-    const [ isOnline, setOnline ] = useState(true);
+    const [isOnline, setOnline] = useState(true);
 
     const updateOnline = () => {
         setOnline(window.navigator.onLine);

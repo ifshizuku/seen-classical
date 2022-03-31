@@ -1,4 +1,4 @@
-const withPWA = require("next-pwa");
+// const withPWA = require("next-pwa");
 // next.config.js
 module.exports = {
     i18n: {
@@ -11,9 +11,10 @@ module.exports = {
     },
 };
 
-module.exports = withPWA({
-    pwa: {
-        // disable: true,
-        dest: "public",
-    },
-});
+// module.exports = withPWA({
+//     pwa: {
+//         // disable: true,
+//         dest: "public",
+//         buildExcludes: [/middleware-manifest.json$/],
+//     },
+// });
