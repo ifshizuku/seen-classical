@@ -4,7 +4,7 @@ const runtimeCaching = require("./swc/cache.js");
 
 module.exports = withPWA({
     pwa: {
-        disable: true,
+        // disable: true,
         dest: "public",
         runtimeCaching,
         buildExcludes: [/middleware-manifest\.json$/],
