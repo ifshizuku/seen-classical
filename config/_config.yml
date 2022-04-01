@@ -167,7 +167,7 @@ secondaryView:
           fullname: "小红书"
           icon: "iconfont icon-xiaohongshuicon"
           hover: "hover:bg-[#f43f5e]"
-          link: "https://ifshizuku.lofter.com"
+          link: "https://www.xiaohongshu.com/user/profile/61f7bc9e000000001000faa2"
         - key: "figma"
           fullname: "Figma"
           icon: "fa-brands fa-figma"
@@ -179,4 +179,3 @@ secondaryView:
           hover: "hover:bg-[#3b82f6]"
           link: "https://www.zhihu.com/people/coldwith"
           hot: "true"
-        
