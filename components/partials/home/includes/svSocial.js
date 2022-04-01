@@ -53,7 +53,8 @@ function SingleSocial(props) {
             href={props.config.link}
             target="_blank"
             rel="noopener noreferrer"
-            title={props.config.fullname}>
+            title={props.config.fullname}
+            tabIndex="0">
             <div
                 id={"sv-social-" + props.config.key + "-icon"}
                 className={classNames(

@@ -58,7 +58,7 @@ function SingleSkill(props) {
                     id: props.config.key,
                 });
             }}
-            tabIndex="1">
+            tabIndex="0">
             <div id={"sv-skill-" + props.config.key + "-left"}>
                 <i
                     id={"sv-skill-" + props.config.key + "-icon"}
