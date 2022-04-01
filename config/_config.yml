@@ -30,7 +30,68 @@ headedView:
             icon: "fa-arrow-down-short-wide"
 
 secondaryView:
-    profile:
+    profileInfo:
         intro: "川崎雫，来自中国的高一学生，无所事事的一般人。"
         bio: "追逐流逝的烟火，我的世界空无一物。"
-        description: "业余开发者，业余摄影爱好者，业余写手，业余视频制作，反正总而言之就是业余的就对了，技能点很泛，没什么专精的但什么都会，学习速度很快。被心情支配的工具人罢了，偶尔还是有点正常的情感和奇思妙想，或许。"
+        description: "业余开发者，业余摄影爱好者，业余写手，业余视频制作，反正总而言之就是业余的就对了，技能点很泛，没什么专精的但什么都会，学习速度很快。被心情支配的工具人罢了，偶尔还是有点正常的情感和奇思妙想。"
+        avatar: "https://seen-1302639736.file.myqcloud.com/site-data/homepage/avatar01.webp"
+    skills:
+        - key: "js"
+          fullname: "Javascript"
+          faicon: "fa-brands fa-js-square"
+          brandColor: "#eed94d"
+          hover: "hover:bg-yellow-300"
+          progress: 60%
+        - key: "react"
+          fullname: "React JS"
+          faicon: "fa-brands fa-react"
+          brandColor: "#61dafb"
+          hover: "hover:bg-sky-400"
+          progress: 40%
+        - key: "swift"
+          fullname: "Swift"
+          faicon: "fa-brands fa-swift"
+          brandColor: "#f87171"
+          hover: "hover:bg-orange-400"
+          progress: 15%
+        - key: "sketch"
+          fullname: "Sketch"
+          faicon: "fa-brands fa-sketch"
+          brandColor: "#f4d35e"
+          hover: "hover:bg-yellow-400"
+          progress: 85%
+        - key: "design"
+          fullname: "设计"
+          faicon: "fa-solid fa-paint-brush"
+          brandColor: "#7dd3fc"
+          hover: "hover:bg-blue-400"
+          progress: 60%
+          refix: true
+        - key: "photography"
+          fullname: "摄影"
+          faicon: "fa-solid fa-camera"
+          brandColor: "#fda4af"
+          hover: "hover:bg-rose-400"
+          progress: 45%
+          refix: true
+        - key: "video"
+          fullname: "视频制作"
+          faicon: "fa-solid fa-video"
+          brandColor: "#c4b5fd"
+          hover: "hover:bg-violet-400"
+          progress: 40%
+          refix: true
+        - key: "writing"
+          fullname: "写作"
+          faicon: "fa-solid fa-feather-pointed"
+          brandColor: "#86efac"
+          hover: "hover:bg-lime-400"
+          progress: 50%
+          refix: true
+        - key: "guitar"
+          fullname: "吉他"
+          faicon: "fa-solid fa-guitar"
+          brandColor: "#f9a8d4"
+          hover: "hover:bg-pink-400"
+          progress: 85%
+          refix: true
