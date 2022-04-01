@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import classNames from "classnames";
 import toast from "react-hot-toast";
 
@@ -6,12 +6,15 @@ function SvSkills(props) {
     const [isHoverOther, setHoverOther] = useState("none");
     const items = props.config.map((item) => <SingleSkill key={item.key} config={item} sho={(e) => setHoverOther(e)} ho={isHoverOther} />);
     return (
-        <div id="sv-profile-skills" className={classNames("pt-6")}>
-            {" "}
+        <div id="sv-profile-skills" className={classNames("pt-8")}>
             <div id="sv-profile-skills-title" className={classNames("flex items-end xl:gap-3 gap-2.5")}>
                 <i
                     id="sv-profile-skills-icon"
-                    className={classNames("fa-solid fa-hashtag", "text-2xl text-transparent bg-clip-text bg-gradient-to-tr from-pink-400 to-pink-300")}></i>
+                    className={classNames(
+                        "fa-solid fa-hashtag",
+                        "text-2xl text-transparent bg-clip-text bg-gradient-to-tr from-pink-400 to-pink-300",
+                        "pb-0.5"
+                    )}></i>
                 <h2 id="sv-profile-skills-title-text" className={classNames("font-bold text-3xl text-white text-opacity-100 subpixel-antialiased")}>
                     技能点
                 </h2>
@@ -19,7 +22,7 @@ function SvSkills(props) {
             <div
                 id="sv-profile-skills-content"
                 className={classNames(
-                    "flex flex-row flex-wrap sm:gap-8 gap-6 sm:justify-start justify-center",
+                    "flex flex-row flex-wrap sm:gap-8 gap-6 sm:justify-start",
                     "sm:pl-[2.4rem] sm:pr-[2.1rem] pl-[1.0rem] pr-[1.0rem] md:pt-5 pt-6"
                 )}>
                 {items}

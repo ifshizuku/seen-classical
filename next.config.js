@@ -1,13 +1,12 @@
-const withPWA = require("next-pwa");
-const runtimeCaching = require("./swc/cache.js");
+const withPWA = require("./next-pwa/index.js");
 // next.config.js
 
 module.exports = withPWA({
     pwa: {
         // disable: true,
         dest: "public",
-        runtimeCaching,
         buildExcludes: [/middleware-manifest\.json$/],
+        skipWaiting: false,
     },
     i18n: {
         locales: ["zh-CN"],

@@ -11,12 +11,12 @@ function HomePage() {
     const isOnline = useNetwork();
     useEffect(() => {
         if (!isOnline) {
-            toast.error("您正在浏览一个离线页面", {
+            toast.error("您正在浏览离线页面", {
                 position: "bottom-right",
                 autoClose: 3000,
             });
         }
-        console.log(["📎 网络状态：", isOnline ? "在线" : "离线"].join(""));
+        console.log(["📎 当前网络状态：", isOnline ? "在线" : "离线"].join(""));
         return;
     });
 

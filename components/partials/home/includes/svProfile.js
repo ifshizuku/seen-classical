@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import SvAbout from "./svAbout";
 import SvSkills from "./svSkills";
+import SvSocial from "./svSocial"
 
 function SvProfile(props) {
     return (
@@ -16,6 +17,7 @@ function SvProfile(props) {
             <div id="sv-profile-content" className={classNames("w-11/12", "pt-6 mb-10 mt-5")}>
                 <SvAbout config={props.config.profileInfo} />
                 <SvSkills config={props.config.skills} />
+                <SvSocial config={props.config.social} />
             </div>
         </div>
     );
