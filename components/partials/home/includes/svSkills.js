@@ -48,7 +48,7 @@ function SingleSkill(props) {
                 setIsHover(false);
                 props.sho("none");
             }}
-            onTouchEnd={() => {
+            onClick={() => {
                 toast.success(props.config.fullname + " 进度：" + props.config.progress, {
                     duration: 1800,
                     position: "top-left",
