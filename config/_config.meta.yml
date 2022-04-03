@@ -1,0 +1,20 @@
+# This file is used to configure the site's head meta data.
+siteTitle: "旧念 / Seen"
+siteAuthor: "Kawasaki Shizuku"
+siteDescription: "川崎雫的个人导航站点，从过去走来，连接新的开始。旧念，只为昔见。15岁高中生，什么都会一点但什么都不专精的废柴。点子很多，但是没有什么特别的。被心情支配的工具人，开发方向集中在 Web 前端，自学了界面设计以及不少专业技能。除了一直都很累之外。x):"
+og:
+    image: "https://seen-1302639736.file.myqcloud.com/site-data/homepage/favicon/si.webp"
+    title: "Seen 导航页，从这里开始连接"
+    description: "这里是川崎雫的个人站点。一个什么都会但什么都不专精的废柴。欢迎来到我的世界，我会一直都在这里。"
+    locale: "zh_CN"
+    siteName: "旧念 / Seen"
+tw:
+    image: "https://seen.moe/icons/android-chrome-192x192.png"
+    title: "Seen 导航页，从这里开始连接"
+    card: "旧念 / Seen"
+    link: "https://seen.moe"
+    description: "这里是川崎雫的个人站点。一个什么都会但什么都不专精的废柴。欢迎来到我的世界，我会一直都在这里。"
+    creator: "Kawasaki Shizuku"
+pwa:
+    name: "Seen"
+    appleMobileWebAppTitle: "Seen"

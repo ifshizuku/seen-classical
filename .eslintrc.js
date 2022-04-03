@@ -3,6 +3,7 @@ module.exports = {
     extends: [
         "plugin:react/recommended", // Uses the recommended rules from @eslint-plugin-react
         "plugin:@typescript-eslint/recommended", // Uses the recommended rules from the @typescript-eslint/eslint-plugin
+        "plugin:import/recommended",
         "prettier",
         "plugin:@next/next/recommended",
     ],
@@ -22,6 +23,11 @@ module.exports = {
         react: {
             pragma: "React",
             version: "detect",
+        },
+        "import/resolver": {
+            node: {
+                extensions: [".js", ".jsx", ".ts", ".tsx"],
+            },
         },
     },
     rules: {},

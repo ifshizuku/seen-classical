@@ -1,0 +1,9 @@
+headedView:
+    backgroundImage: "https://seen-1302639736.file.myqcloud.com/site-data/homepage/bg-05.webp"
+    i:
+        info: "Seen"
+    ds:
+        sentence: "Kawasaki Shizuku / Rainy Umbrella"
+        moreicon:
+            series: "solid"
+            icon: "fa-arrow-down-short-wide"
