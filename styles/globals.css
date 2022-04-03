@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "iconfont"; /* Project id  */
+    src: url("../public/iconfont.ttf?t=1648800327810") format("truetype");
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-LOFTER:before {
+    content: "\e866";
+}
+
+.icon-zhihu:before {
+    content: "\e87c";
+}
+
+.icon-coolapk:before {
+    content: "\e501";
+}
+
+.icon-xiaohongshuicon:before {
+    content: "\e602";
+}
+
+.icon-netease-cloud-music-line:before {
+    content: "\e6a5";
+}
+
+.icon-xiaohongshuicon {
+    font-size: 24px !important;
+}
