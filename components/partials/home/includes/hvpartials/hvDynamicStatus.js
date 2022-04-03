@@ -1,6 +1,6 @@
-import { useEffect } from "react";
+import { scroller } from "react-scroll";
 import classNames from "classnames";
-import useHitokoto from "../../../apis/useHitokoto";
+import useHitokoto from "../../../../apis/useHitokoto";
 
 function HvDynamicStatus(props) {
     const { data: mTitle, error: mError, mutate: mMutate } = useHitokoto({ collection: "literature", type: "text", min: 0, max: 10, ar: false });
@@ -45,11 +45,22 @@ function HvDynamicStatus(props) {
                     {props.config.sentence}
                 </p>
             </div>
-            <div id="hv-dynamic-status-more" className={classNames("flex items-center gap-2.5", "mt-1.5")}>
-                <i id="hv-dynamic-status-more-icon" className={classNames("fa-solid fa-arrow-down-short-wide", "text-white text-opacity-80")}></i>
-                <p id="hv-dynamic-status-more-text" className={classNames("font-medium text-white text-opacity-80 text-lg", "select-none")}>
-                    更多...
-                </p>
+            <div id="hv-dynamic-status-more" className={classNames("flex", "mt-1.5")}>
+                <div
+                    onClick={() => {
+                        scroller.scrollTo("sv-profile", {
+                            duration: 1100,
+                            delay: 50,
+                            smooth: true,
+                            offset: 0, // Scrolls to element + 50 pixels down the page
+                        });
+                    }}
+                    className="flex items-center gap-2.5">
+                    <i id="hv-dynamic-status-more-icon" className={classNames("fa-solid fa-arrow-down-short-wide", "text-white text-opacity-80")}></i>
+                    <p id="hv-dynamic-status-more-text" className={classNames("font-medium text-white text-opacity-80 text-lg", "select-none")}>
+                        更多...
+                    </p>
+                </div>
             </div>
         </div>
     );

@@ -3,7 +3,7 @@ const withPWA = require("./next-pwa/index.js");
 
 module.exports = withPWA({
     pwa: {
-        // disable: true,
+        disable: true,
         dest: "public",
         buildExcludes: [/middleware-manifest\.json$/],
         skipWaiting: false,
