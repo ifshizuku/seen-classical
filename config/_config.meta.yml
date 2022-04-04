@@ -1,4 +1,5 @@
 # This file is used to configure the site's head meta data.
+# Has been imported from pages/index.tsx
 siteTitle: "旧念 / Seen"
 siteAuthor: "Kawasaki Shizuku"
 siteDescription: "川崎雫的个人导航站点，从过去走来，连接新的开始。旧念，只为昔见。15岁高中生，什么都会一点但什么都不专精的废柴。点子很多，但是没有什么特别的。被心情支配的工具人，开发方向集中在 Web 前端，自学了界面设计以及不少专业技能。除了一直都很累之外。x):"
@@ -18,3 +19,4 @@ tw:
 pwa:
     name: "Seen"
     appleMobileWebAppTitle: "Seen"
+    theme: "#27272a"

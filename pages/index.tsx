@@ -1,11 +1,13 @@
+import { hvConfig, metaConfig } from "../components/toConfig"
+import HeadedView from "../components/home/headedView"
 import React from "react"
+import Wrap from "../components/home/basicLayout"
 
 function Homepage() {
     return (
-        <div>
-            <h1>placeholder</h1>
-            <p>This is the homepage</p>
-        </div>
+        <Wrap config={metaConfig}>
+            <HeadedView config={hvConfig} />
+        </Wrap>
     )
 }
 

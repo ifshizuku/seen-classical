@@ -1,50 +1,124 @@
-import React from 'react';
-import Head from "next/head";
+import React from "react"
+import Head from "next/head"
 
-function Wrap(props) {
+// Define Type for Props
+interface Props {
+    config: {
+        siteTitle: string
+        siteAuthor: string
+        siteDescription: string
+        og: {
+            image: string
+            title: string
+            description: string
+            locale: string
+            siteName: string
+        }
+        tw: {
+            title: string
+            card: string
+            link: string
+            creator: string
+            description: string
+            image: string
+        }
+        pwa: {
+            name: string
+            appleMobileWebAppTitle: string
+            theme: string
+        }
+    }
+    children?: React.ReactNode
+}
+
+// Wrap Function
+function Wrap({ config, children }: Props) {
     return (
         <div id="wrap" className="w-full h-full ">
             {/* Meta Data */}
             <Head>
                 <meta charSet="utf-8" />
-                <title>{props.config.siteTitle}</title>
-                <meta name="author" content={props.config.siteAuthor} />
-                <meta name="description" content={props.config.siteDescription} />
+                <title>{config.siteTitle}</title>
+                <meta name="author" content={config.siteAuthor} />
+                <meta name="description" content={config.siteDescription} />
 
-                <meta name="viewport" content="width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover" />
+                <meta
+                    name="viewport"
+                    content="width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
+                />
 
                 {/* Facebook Open Graph */}
-                <meta property="og:image" content={props.config.og.image} />
-                <meta property="og:title" content={props.config.og.title}></meta>
-                <meta property="og:description" content={props.config.og.description} />
-                <meta property="og:locale" content={props.config.og.locale} />
-                <meta property="og:site_name" content={props.config.og.siteName} />
+                <meta property="og:image" content={config.og.image} />
+                <meta property="og:title" content={config.og.title}></meta>
+                <meta
+                    property="og:description"
+                    content={config.og.description}
+                />
+                <meta property="og:locale" content={config.og.locale} />
+                <meta property="og:site_name" content={config.og.siteName} />
 
                 {/* Twitter */}
-                <meta name="twitter:title" content={props.config.tw.title} />
-                <meta name="twitter:card" content={props.config.tw.card} />
-                <meta name="twitter:url" content={props.config.tw.link} />
-                <meta name="twitter:description" content={props.config.tw.description} />
-                <meta name="twitter:image" content={props.config.tw.image} />
-                <meta name="twitter:creator" content={props.config.tw.creator} />
+                <meta name="twitter:title" content={config.tw.title} />
+                <meta name="twitter:card" content={config.tw.card} />
+                <meta name="twitter:url" content={config.tw.link} />
+                <meta
+                    name="twitter:description"
+                    content={config.tw.description}
+                />
+                <meta name="twitter:image" content={config.tw.image} />
+                <meta name="twitter:creator" content={config.tw.creator} />
 
-                <meta name="application-name" content={props.config.pwa.name} />
+                {/* PWA */}
+                <meta name="application-name" content={config.pwa.name} />
                 <meta name="apple-mobile-web-app-capable" content="yes" />
-                <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-                <meta name="apple-mobile-web-app-title" content={props.config.pwa.appleMobileWebAppTitle} />
-                <meta name="format-detection" content="telephone=no,email=no,adress=no" />
+                <meta
+                    name="apple-mobile-web-app-status-bar-style"
+                    content="default"
+                />
+                <meta
+                    name="apple-mobile-web-app-title"
+                    content={config.pwa.appleMobileWebAppTitle}
+                />
+                <meta
+                    name="format-detection"
+                    content="telephone=no,email=no,adress=no"
+                />
                 <meta name="mobile-web-app-capable" content="yes" />
-                <meta name="msapplication-config" content="/icons/browserconfig.xml" />
-                <meta name="msapplication-TileColor" content="#27272a" />
+                <meta
+                    name="msapplication-config"
+                    content="/icons/browserconfig.xml"
+                />
+                <meta
+                    name="msapplication-TileColor"
+                    content={config.pwa.theme}
+                />
                 <meta name="msapplication-tap-highlight" content="no" />
-                <meta name="theme-color" content="#27272a" />
+                <meta name="theme-color" content={config.pwa.theme} />
 
-                <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+                <link
+                    rel="apple-touch-icon"
+                    sizes="180x180"
+                    href="/icons/apple-touch-icon.png"
+                />
 
-                <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
-                <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
-                <link rel="manifest" href="/site.webmanifest" />
-                <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#27272a" />
+                <link
+                    rel="icon"
+                    type="image/png"
+                    sizes="32x32"
+                    href="/icons/favicon-32x32.png"
+                />
+                <link
+                    rel="icon"
+                    type="image/png"
+                    sizes="16x16"
+                    href="/icons/favicon-16x16.png"
+                />
+                {/* <link rel="manifest" href="/site.webmanifest" /> */}
+                <link
+                    rel="mask-icon"
+                    href="/icons/safari-pinned-tab.svg"
+                    color={config.pwa.theme}
+                />
                 <link rel="shortcut icon" href="/icons/favicon.ico" />
 
                 <link
@@ -85,9 +159,9 @@ function Wrap(props) {
             </Head>
 
             {/* Children */}
-            {props.children}
+            {children}
         </div>
-    );
+    )
 }
 
-export default Wrap;
+export default Wrap
