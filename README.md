@@ -5,4 +5,4 @@
 
 致未来
 
-此仓库已链接Discord频道
+# 新项目在 [seen](https://github.com/ifshizuku/seen)
