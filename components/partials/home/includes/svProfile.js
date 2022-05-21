@@ -17,7 +17,7 @@ function SvProfile(props) {
                 "rounded-2xl outline-slate-200 outline",
                 "flex justify-center transition-all duration-200 transform-gpu",
                 "bg-zinc-700 md:bg-opacity-90 bg-opacity-80",
-                "mt-10",
+                "mt-10 mb-10",
                 inView ? "md:outline-4" : "outline-0"
             )}
             ref={svp}>
